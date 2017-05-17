@@ -177,6 +177,9 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
 
+        // Add cors https://github.com/barryvdh/laravel-cors
+        Barryvdh\Cors\ServiceProvider::class,
+
     ],
 
     /*
