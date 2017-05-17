@@ -14,11 +14,11 @@ Route::group(['prefix' => 'api/v1'], function () {
 
   // Create New user Route
   Route::post('user', [
-    'user' => 'AuthController@store'
+    'uses' => 'AuthController@store'
   ]);
 
   // User signin Route
   Route::post('user/signin', [
-    'user' => 'AuthController@signin'
+    'uses' => 'AuthController@signin'
   ]);
 });

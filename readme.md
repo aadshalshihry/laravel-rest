@@ -38,3 +38,21 @@ Route::group(['prefix' => 'api/v1'], function () {
 ```
 
 ### Add Controller
+ * to create controller run the following commands
+
+ ```
+ php artisan make:controller MeetingController --resource
+ ```
+
+ ```
+ php artisan make:controller RegistrationController --resource
+ ```
+
+ ```
+ php artisan make:controller AuthController
+ ```
+
+
+### Change the web middleware
+* You need to change the middleware from "web" to api in the ./Providers/RouteServiceProvider@mapWebRoutes
+* I think you need only to do that when you use the ./routes/web.php
